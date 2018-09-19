@@ -1,0 +1,22 @@
+mutation {
+  first: createBook(data: {
+    title: "Hello World"
+    description: "This is my first blog post ever!"
+  }) {
+    id
+  }
+  
+  second: createBook(data: {
+    title: "My Second Post"
+    description: "My first post was good, but this one is better!"
+  }) {
+    id
+  }
+  
+  third: createBook(data: {
+    title: "Solving World Hunger"
+    description: "This is a draft..."
+  }) {
+    id
+  }
+}
